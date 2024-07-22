@@ -1,0 +1,351 @@
+/* Navbar menu styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    align-items: center;
+    background-color: var(--navbar);
+    height:5.4rem;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.navbar_links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo{
+    object-fit: contain;
+}
+.navbar_list {
+    gap: 2.2rem;
+}
+.navbar_list_item_btn {
+    padding: 1.6rem 0rem 1.6rem 0rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.24rem;
+    background: transparent;
+    color: var(--white);
+    text-align: center;
+    font-family: "Shippori Mincho", serif;
+    border: none;
+    outline: none;
+    transition: 0.3s all ease-in-out;
+}
+.navbar_list_item_btn:hover{
+    background: var(--subYellow);
+    transition: 0.3s all ease-in-out;
+}
+
+.special_buttons_btn_primary{
+    padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Shippori Mincho", serif;
+    line-height: 2.24rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    transition: 0.3s all ease-in-out;
+}
+.special_buttons_btn_subYellow{
+    padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+    background: var(--subYellow);
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Shippori Mincho", serif;
+    line-height: 2.24rem;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+.special_buttons_btn_primary:hover{
+    background: var(--subYellow);
+    transition: 0.3s all ease-in-out;
+}
+
+.navigation_accardion_menu{
+    width: 5rem;
+    height: 100%;
+    display: none;
+  }
+  
+  .close_navigation_minus{
+    display: none;
+  }
+
+  
+  .humberger_lines {
+    height: 0.2rem;
+    width: 2rem;
+    background: var(--white);
+    margin: 0.4rem 0;
+  }
+  
+  .navigation_responsive_menu {
+    display: none;
+  }
+/* //Navbar menu styles */
+
+
+/* Home section styles */
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../../assets//headerGreen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 9.3rem 12.4rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+}
+
+.home_section_rectangles{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.home_section_vector{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.home_section_title {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.home_section_pargraph {
+    font-size: 2rem;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: 13%;
+}
+
+.home_section_main_title {
+    font-size: 6.8rem;
+    font-family: "Shippori Mincho", serif;
+    line-height: 10.88rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(88.2deg,#999999 21.11%,#ffffff 46.58%,#999999 72.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+/* //Home Section Styles */
+
+
+
+/* Responsive design styles */
+@media screen and (max-width: 990px) {
+.navigation_accardion_menu{
+  display: block;
+}
+.navbar_links {
+  display: none;
+}
+.navbar {
+  padding: 2rem;
+  height: 6.3rem;
+  background: var(--primary);
+  border-bottom: 0.1rem solid var(--slate);
+}
+.navigation_responsive_menu {
+  position: absolute;
+  right: -1000px;
+  top: 6.3rem;
+  width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 6.2rem);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  transition: 0.3s all;
+}
+
+.accardion_menu {
+    display: none !important;
+}
+.navigation_link_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 6.64rem;
+  padding: 2rem;
+  background: var(--primary);
+  border-bottom: 0.1rem solid var(--slate);
+  cursor: pointer;
+  transition: .3s all;
+}
+.navigation_link_item:hover {
+  background: var(--yellow);
+}
+.navigation__link_recruiter {
+  background: rgba(0, 27, 24, 0.737);
+}
+.navigation__link__inquiry {
+  background: linear-gradient(
+    180deg,
+    rgba(198, 181, 25, 0.7) 0%,
+    rgba(96, 87, 12, 0.7) 100%
+  );
+}
+.navigation_menu_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.navigation_accardion_menu
+ {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+}
+.close_navigation_minus {
+  width: 1.5rem;
+  height: 0.2rem;
+  background: var(--white);
+}
+.navigation_menu_link {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-family: "Shippori Mincho" "serif";
+  width: 100%;
+  height: 100%;
+}
+.navbar__link-arrow {
+  color: var(--white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.plusFirstAccardion,.plusSecondAccardion {
+  color: var(--white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.minusFirstAccardion,.minusSecondAccardion {
+  display: none;
+  width: 1.2rem;
+  height: 0.2rem;
+  background: var(--white);
+  margin: 2rem 0;
+}
+
+.none {
+  display: none !important;
+}
+
+.block {
+  display: block !important;
+}
+.flex {
+  display: flex !important;
+}
+.right {
+  right: 0;
+}
+.home {
+  padding: 9.3rem 2rem;
+}
+.home_section_vector {
+  display: none;
+}
+}
+
+
+
+@media screen and (max-width:768px) {
+
+.home_section_pargraph {
+    font-size: 2rem;
+}
+.home_section_main_title {
+  font-size: 6rem;
+}
+
+}
+
+
+@media screen and (max-width:578px) {
+
+  .home_section_pargraph {
+      font-size: 2rem;
+  }
+  .home_section_main_title {
+    font-size: 5rem;
+    
+  }
+  .home_section_rectangles{
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.navigation_responsive_menu {
+
+  width: 100%;
+}
+}
+
+
+
+
+@media screen and (max-width:375px) {
+
+  .home_section_pargraph {
+      font-size: 1.6rem;
+  }
+  .home_section_main_title {
+    font-size: 3.2rem;
+  }
+  .home {
+    padding: 5rem 2rem;
+  }
+
+.home_section_title_span
+  {
+    display: block;
+    font-size: 5rem;
+    font-family: "Shippori Mincho", serif;
+    line-height: 6.1rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(88.2deg,#999999 21.11%,#ffffff 46.58%,#999999 72.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+      

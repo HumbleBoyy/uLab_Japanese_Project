@@ -1,0 +1,101 @@
+.contact_and_recruiter{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+}
+
+.recruiter{
+    position: relative;
+    width: 50%;
+    height: 26rem;
+    padding: 2rem 10rem;
+    color: var(--white);
+    display: flex;
+}
+.contact{
+    position: relative;
+    width: 50%;
+    height: 26rem;
+    padding: 2rem 10rem;
+    color: var(--white);
+    
+}
+.recruiter{
+    background: rgba(0, 27, 24, 0.737);
+}
+
+.contact{
+    background: linear-gradient(180deg, rgba(198, 181, 25, 0.7) 0%, rgba(96, 87, 12, 0.7) 100%);
+}
+
+
+.recruiter_main_text{
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 8.6rem;
+    letter-spacing: 5%;
+    font-family: "Shippori Mincho" "serif";
+}
+
+.recruiter_second_text{
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    letter-spacing: 5%;
+    font-family: "Shippori Mincho" "serif";
+}
+
+.contact_and_recruiter_image
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;   
+}
+
+@media screen and (max-width:990px) {
+    .contact_and_recruiter{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20rem;
+    }
+    .recruiter{
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+        
+    }
+}
+
+
+@media screen and (max-width:570px) {
+    .contact_and_recruiter{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20rem;
+    }
+    .recruiter{
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+        
+    }
+    .recruiter_main_text{
+        font-size: 4.2rem;
+        font-weight: 700;
+        line-height: 5.7rem;
+    }
+    
+    .recruiter_second_text{
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.8rem;
+    }
+}

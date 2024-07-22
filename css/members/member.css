@@ -1,0 +1,91 @@
+.members{
+    width: 100%;
+    background: var(--primary);
+    height: auto;
+    padding: 6rem 0rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.memebrs_section_main_text{
+    text-align: center;
+    font-family: "Shippori Mincho" "serif";
+    font-weight: 700;
+    font-size:  4.8rem;
+    line-height: 8.6rem;
+    letter-spacing: 5%;
+    color: var(--white);
+}
+
+.memebrs_section_japanese_text{
+    font-family: "Shippori Mincho" "serif";
+    font-weight: 700;
+    font-size:  1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: 5%;
+    color: var(--white);
+}
+
+.slider_item_name{
+    font-family: "Shippori Mincho" "serif";
+    font-weight: 700;
+    font-size:  2.4rem;
+    line-height: 4.3rem;
+    letter-spacing: 5%;
+    color: var(--white);
+}
+
+.slider_item_paragraph{
+    font-family: "Shippori Mincho" "serif";
+    font-weight: 700;
+    font-size:  1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: 5%;
+}
+
+.man_image_slider_items{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 7 /4);
+}
+
+.slider_item {
+    width: calc(100% / 3); 
+    box-sizing: border-box;
+    padding: 0 1rem;
+    height: 5.4rem;
+    margin: 0 2.5rem;
+    
+  }
+  .view_more_btn_members{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    text-align: center;
+    font-family: "Shippori Mincho";
+    background: transparent;
+    border: none;
+    border-bottom: 0.1rem solid var(--white);
+    outline: none;
+    margin-top: 2rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    margin-top: 40rem;
+  }
+
+  .memebers_btn_cover{
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width:990px) {
+    .man_image_slider_items {
+        width: calc(100% * 7 / 3);
+      }
+      .slider_item {
+        width: calc(100% / 2); 
+        margin: 0 1.5rem;
+      }
+  }

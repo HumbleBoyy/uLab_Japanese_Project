@@ -1,0 +1,200 @@
+.service_section {
+    height: auto;
+    background: var(--gray);
+    padding: 6rem 0rem;
+    margin-top: 2rem;
+}
+
+.service_title{
+    text-align: center;
+}
+
+.service_title_yellow{
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Shippori Mincho" "serif";
+    line-height: 2.8rem;
+    letter-spacing: 5%;
+    color: var(--subYellow);
+}
+
+.service_title_black{
+    font-size: 4.8rem;
+    line-height: 8.6rem;
+    letter-spacing: 5%;
+    font-weight: 700;
+    font-family: "Shippori Mincho" "serif";
+}
+.service_inner_paragraph {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    letter-spacing: 5%;
+    font-weight: 700;
+    font-family: "Shippori Mincho" "serif";
+}
+.service_inner_paragraph_flex{
+    display: flex;
+    justify-content: center;
+    margin-left: 25rem;
+}
+
+.service_recatngle_yellowImage{
+    float: left;
+}
+.service_card_images{
+    width: 49.3rem;
+}
+
+.service_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    bottom: 5%;
+}
+.service_cards_second{
+    margin: 5rem;
+}
+.mini_blackCard{
+    background: black;
+    width: 45.1rem;
+    position: absolute;
+    top: 35%;
+    height:5rem;
+    padding: 0.5rem;
+}
+
+.service_textService{
+   color: var(--white);
+   font-size: 2.4rem;
+   font-weight: 700;
+   font-family: "Shippori Mincho";
+}
+.black_card_text{
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Shippori Mincho";
+ }
+
+ .serviceGreen_card{
+    background: var(--primary);
+    width: 44.3rem;
+    height: 37.1rem;
+    margin-left: 1rem;
+ }
+ .service_green_card_texts{
+    text-align: center;
+    padding-top: 2rem;
+    color: var(--white);
+    font-size: 3.2rem;
+    font-family: "Shippori Mincho";
+    font-weight: 700;
+ }
+ .service_green_card_long_word_text{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Shippori Mincho";
+ }
+.view_more_Service_GreenCard{
+    font-size: 1.6rem;
+    position: relative;
+    left: 70%;
+    font-weight: 700;
+    line-height: 4.3rem;
+    text-align: center;
+    font-family: "Shippori Mincho";
+    background: transparent;
+    border: none;
+    border-bottom: 0.1rem solid var(--white);
+    outline: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/*  */
+
+.smallDevice_blackCard{
+    width: 10.4rem;
+    height: 3.6rem;
+    background: var(--black);
+    position: absolute;
+    top: 25%;
+}
+.smallDevice_blackCardSecond{
+    width: 34rem;
+    height: 3.6rem;
+    background: var(--black);
+    position: absolute;
+    top:31%; 
+}
+
+.smallDevice_blackCard_text{
+    font-size: 1.6rem;
+    color: var(--white);
+    letter-spacing: 5%;
+    font-weight: "Shippori Mincho" "serif";
+    line-height: 2.8rem;
+    padding: 0.5rem;
+}
+.service_card_images_smalldevice{
+    width: 34rem;
+}
+.serviceGreen_cardSmalDevice{
+    background: var(--primary);
+    width: 34rem;
+    height: 37.1rem;
+}
+
+.smallDeviceTexts{
+    font-size: 2.5rem;
+}
+
+.smallDeviceJapaneseWord{
+    font-size: 1.8rem;
+}
+
+.small_device_long_word{
+    font-size: 1.5rem;
+    line-height: 2.88rem;
+}
+
+.view_more_Service_GreenCard_small_device{
+    position: relative;
+    left: 35%;
+    margin-top: 2rem;
+}
+.service_card_small_devices{
+    margin-top: 3.2rem;
+}
+
+
+.service_section_small_devices{
+    display: none;
+}
+
+@media  screen and (max-width:990px) {
+    .service_section_large_devices{
+        display: none;
+    }
+
+    .service_section_small_devices{
+        display: block;
+    }
+    .service_inner_paragraph_small_devices{
+        width: 34.3rem;
+        line-height: 4.2rem;
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    .service_inner_paragraph_flex{
+     
+        margin-left: 0rem;
+    }
+}

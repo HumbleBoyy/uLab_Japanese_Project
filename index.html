@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    <title>U-Lab</title>
+
+    <!-- Css file links -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carousel/carousel.css">
+    <link rel="stylesheet" href="./css/home/home.css">
+    <link rel="stylesheet" href="./css/future/future.css">
+    <link rel="stylesheet" href="./css/footer/footer.css">
+    <link rel="stylesheet" href="./css/members/member.css">
+    <link rel="stylesheet" href="./css/news/news.css">
+    <link rel="stylesheet" href="./css/service/service.css">
+    <link rel="stylesheet" href="./css/study/study.css">
+    <link rel="stylesheet" href="./css/recruiter/recruiter.css">
+    
+    <!-- Css file links -->
+
+    <div class="main_container">
+
+        <!-- Navbar menu -->
+        <nav class="navbar">
+           <a href="#" class="navbar_logo">
+            <img src="./assets/LogoULab.svg" alt="U_Lab_logo">
+           </a>
+           <div class="navbar_links">
+              <ul class="navbar_list">
+                  <li class="navbar_list_item">
+                      <a href="#"><button class="navbar_list_item_btn">会社紹介</button></a>
+                  </li>
+                  <li class="navbar_list_item">
+                    <a href="#"><button class="navbar_list_item_btn">会社紹介</button></a>
+                </li>
+                <li class="navbar_list_item">
+                    <a href="#"><button class="navbar_list_item_btn">会社紹介</button></a>
+                </li>
+                <li class="navbar_list_item">
+                    <a href="#"><button class="navbar_list_item_btn">会社紹介</button></a>
+                </li>
+              </ul>
+              <div class="special_buttons">
+                <a href="#"><button class="special_buttons_btn_primary">採用情報</button></a>
+                <a href="#"><button class="special_buttons_btn_subYellow">お問い合わせ</button></a>
+              </div>
+           </div>
+
+           <!-- Hamburger Menu -->
+           <div class="navigation_accardion_menu" onclick="Navigation_Accardion_Menu('navigation_responsive')">
+            <div class="humburger_menu">
+              <div class="humberger_lines"></div>
+              <div class="humberger_lines"></div>
+              <div class="humberger_lines"></div>
+            </div>
+            <div class="close_navigation_minus"></div>
+          </div>
+          <div class="navigation_responsive_menu">
+            <div class="navigation_link_item" onclick="Navigation_Accardion_Menu('accordion_navigation_menu_First')">
+              <a href="#" class="navigation_menu_link">会社情報</a>
+              <div class="minusFirstAccardion"></div>
+              <span class="plusFirstAccardion">+</span>
+            </div>
+            <div class="navigation_link_item accardion_menu first">
+              <a href="#" class="navigation_menu_link">会社概要</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item accardion_menu second">
+              <a href="#" class="navigation_menu_link">行動指針・経営方針</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item accardion_menu third">
+              <a href="#" class="navigation_menu_link">代表挨拶</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item accardion_menu fourth">
+              <a href="#" class="navigation_menu_link">メンバー</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item" onclick="Navigation_Accardion_Menu('accordion_navigation_menu_Second')">
+              <a href="#" class="navigation_menu_link">サービス</a>
+              <div class="minusSecondAccardion"></div>
+              <span class="plusSecondAccardion">+</span>
+            </div>
+
+
+            <div class="navigation_link_item accardion_menu fifth">
+              <a href="#" class="navigation_menu_link">ZERO SALES</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item accardion_menu sixth">
+              <a href="#" class="navigation_menu_link">ZERO MARKETING</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item accardion_menu seventh">
+              <a href="#" class="navigation_menu_link">ZERO PROMOTION</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item accardion_menu eighth">
+              <a href="#" class="navigation_menu_link">ZERO UNIT</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item">
+              <a href="#" class="navigation_menu_link">導入事例</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item">
+              <a href="#" class="navigation_menu_link">お知らせ</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+
+
+            <div class="navigation_link_item  navigation__link_recruiter">
+              <img src="./assets/footerFirst.jpg" alt="RecruiterImage" class="navigation_menu_image">
+              <a href="#" class="navigation_menu_link">採用情報</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+            <div class="navigation_link_item navigation__link__inquiry">
+              <img src="./assets/footerSecond.jpg" alt="InquiryImage" class="navigation_menu_image">
+              <a href="#" class="navigation_menu_link">お問い合わせ</a>
+              <span class="navbar__link-arrow">></span>
+            </div>
+          </div>
+           <!-- Hamburger Menu -->
+        </nav>
+      <!-- Navbar menu -->
+        
+      <!-- Home section -->
+       <section class="home" id="home">
+         <img src="./assets//head_rectangles.png" alt="home_image_rectangle" class="home_section_rectangles">
+         <img src="./assets//vector_header.svg" alt="home_vector_image" class="home_section_vector">
+
+         <div class="home_section_title">
+             <p class="home_section_pargraph">Management Innovation</p>
+             <h1 class="home_section_main_title">経営プロセスに<span class="home_section_title_span">革新を</span></h1>
+         </div>
+       </section>
+
+       <!-- First Carousel -->
+         <section class="carousel_first">
+           <div class="carousel_cover">
+            <div class="carousel_item"><p class="carousel_item_paragraph">ロゴ</p></div>
+            <div class="carousel_item"><p class="carousel_item_paragraph">ロゴ</p></div>
+            <div class="carousel_item"><p class="carousel_item_paragraph">ロゴ</p></div>
+            <div class="carousel_item"><p class="carousel_item_paragraph">ロゴ</p></div>
+            <div class="carousel_item"><p class="carousel_item_paragraph">ロゴ</p></div>
+            <div class="carousel_item"><p class="carousel_item_paragraph">ロゴ</p></div>
+            <div class="carousel_item"><p class="carousel_item_paragraph">ロゴ</p></div>
+           </div>
+         </section>
+       <!-- First Carousel -->
+
+
+       <!-- CTFGroup section -->
+           <section class="create_future">
+            <div class="future_logo_text">
+              <img src="./assets/future_logo.png" alt="recatngle_future_image" class="rectangle_futureImage">
+              <img src="./assets/create_future_logo.png" alt="create_future_text_image" class="create_future_text_image">
+            </div>
+      
+              <div class="create_future_items">
+                    <div class="future_title">
+                       <h2 class="future_title_text">CTFGROUPは <br>「創造で＿＿をデザインする.」</h2>
+                    </div>
+
+                    <div class="future_paragraph_text">
+                        <p class="futur_paragraph_text_item"> ____には従業員・お客様・関わる全ての皆さまでそれぞれの信念・成し遂げたい事が入ります。<br>
+
+                          私たちCTF GOUPはそれぞれの____を事業を通じてデザインしていくことが、<br>
+                          私たちの経営理念になります。<br>
+                          
+                           Discomfort with common sense <br>
+                          〜小さな気づきから常識に違和感を〜 <br>
+                          
+                          私たちは経営理念を実現するため、目指すべき指標として、このミッションを掲げています。<br>
+                          
+                          常に常識に違和感を持ち続けなければ創造で____をデザインする事はできません。<br>
+                          
+                           1歩1歩着実に成長し、様々なステークホルダーに貢献し、
+                          未来を創造する会社を必ず創っていきます。</p>
+
+                          <button class="view_more_btn">View More <span class="view_more_arrow">→</span></button>
+                          
+                    </div>
+              </div>
+                
+               
+                  <div class="create_future_itemsSecond">
+                    <div class="create_future_logosSecond">
+                      <img src="./assets/future__img.png" alt="rectangle_futureImage" class="future_second_image">
+                      <h2 class="create_future_Second_text">Create the Future <br><span class="create_future_Second_text_inner">未来を創造する</span></h2>
+                   </div>
+                        <div class="future_title">
+                           <h2 class="future_title_textSecond">CTFGROUPは <br>「創造で＿＿をデザインする.」</h2>
+                        </div>
+    
+                        <div class="future_paragraph_textSecond">
+                            <p class="futur_paragraph_text_item">
+                              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+                            </p>
+                            <p class="futur_paragraph_text_item open_gap">
+                              
+                              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+                            </p>
+    
+                              <div class="view_more_btn_future">
+                                <button class="view_more_btn  view_more_Second_version_btn">View More <span class="view_more_arrow">→</span></button>
+                              </div>  
+                        </div>
+                  </div>
+                
+           </section>
+       <!-- CTFGroup section -->
+
+
+       <!-- Service section -->
+          <section class="service_section service_section_large_devices">
+              <div class="service_section_texts">
+                 <div class="service_title">
+                    <p class="service_title_yellow">事業内容</p>
+                    <h2 class="service_title_black">Service</h2>
+                    <div class="service_inner_paragraph_flex">
+                      <p class="service_inner_paragraph">CTFGROUPは総合マーケティング支援事業を通して、企業様様のニーズに合わせた最適な <br>
+                        ご提案をさせていただいております。<br>
+                        「新規開拓をしたいけどノウハウがない。人的リソースが足りない。」<br>
+                        「営業チームのパフォーマンスを上げたい。」<br>
+                        CTFGROUPはそんなお悩みを持つ企業様に特化したzを行っています。</p>
+                        <div class="service_recatngle_yellow">
+                          <img src="./assets/service.png" alt="servicerecatangle_image" class="service_recatngle_yellowImage">
+                        </div>
+                    </div>
+                 </div>
+              </div>
+
+                <div class="service_cards_section">
+                  <div class="service_cards ">
+                    <div class="service_card">
+                      <img src="./assets/servicefirst.jpg" alt="service_picture" class="service_card_images">
+                      <div class="mini_blackCard"><h3 class="black_card_text">Service <span class="service_textService">01 アウトバウンド支援</span></h3></div>
+                      <div class="serviceGreen_card">
+                        <h2 class="service_green_card_texts">
+                          <span class="service_green_card_japanese_word">ゼロセールス</span><br>
+                          ZERO SALES
+                        </h2>
+                           <p class="service_green_card_long_word_text">
+                            営業戦略の立案からマーケティング実行まで企業様 <br>
+                             の営業においての0→1を構築します <br>
+                             。 営業リソース0、営業データ0など企業様のありと <br>
+                              あらゆる0をプロフェッショナルたちがご支援いた <br>
+                              します。
+                           </p>
+                        <button class="view_more_Service_GreenCard">View More <span class="view_more_arrow">→</span></button>
+                      </div>
+                    </div>
+                    <div class="service_card">
+                      <img src="./assets/servicesecond.jpg" alt="service_picture" class="service_card_images">
+                      <div class="mini_blackCard"><h3 class="black_card_text">Service <span class="service_textService">02 インバウンド支援</span></h3></div>
+                      <div class="serviceGreen_card">
+                        <h2 class="service_green_card_texts">
+                          <span class="service_green_card_japanese_word">ゼロマーケティング</span><br>
+                          ZERO MARKETING
+                        </h2>
+                           <p class="service_green_card_long_word_text">
+                            幅広い媒体の中からお客様の業種・業態に合った <br>
+                            最適な広告を提案します。各媒体に精通したプロ <br>
+                            フェッショナルたちが多角的な目線から調査、分 <br>
+                            析し多様な方法を提案、お客様の目的達成をご支 <br>
+                            援いたします。
+                           </p>
+                        <button class="view_more_Service_GreenCard">View More <span class="view_more_arrow">→</span></button>
+                      </div>
+                    </div>
+                </div>
+                <div class="service_cards service_cards_second">
+                  <div class="service_card">
+                    <img src="./assets/servicethird.jpg" alt="service_picture" class="service_card_images">
+                    <div class="mini_blackCard"><h3 class="black_card_text">Service <span class="service_textService">03 SNS運用代行支援</span></h3></div>
+                    <div class="serviceGreen_card">
+                      <h2 class="service_green_card_texts">
+                        <span class="service_green_card_japanese_word">ゼロプロモーション</span><br>
+                        ZERO PROMOTION
+                      </h2>
+                         <p class="service_green_card_long_word_text">
+                          SNS運用の課題に応じて、最適なサービスをご提 <br>
+                          案いたします。 <br>
+                           戦略のプランニングから運用代行・コンサルティ <br>
+                          ング・効果検証まで、ワンストップでご支援いた <br>
+                          します。
+                         </p>
+                      <button class="view_more_Service_GreenCard">View More <span class="view_more_arrow">→</span></button>
+                    </div>
+                  </div>
+                  <div class="service_card">
+                    <img src="./assets/serviceLast.png" alt="service_picture" class="service_card_images">
+                    <div class="mini_blackCard"><h3 class="black_card_text">Service <span class="service_textService">04 クラウドソーシング活用支援</span></h3></div>
+                    <div class="serviceGreen_card">
+                      <h2 class="service_green_card_texts">
+                        <span class="service_green_card_japanese_word">ゼロユニット</span><br>
+                        ZERO UNIT
+                      </h2>
+                         <p class="service_green_card_long_word_text">
+                          クラウドワーカーを活用した業務組織の組織構築 <br>
+                          支援サービス。 <br>
+                           組織作りから 
+                          業務支援まで幅広くサポートできる <br>体制を完備しております。
+                         </p>
+                      <button class="view_more_Service_GreenCard">View More <span class="view_more_arrow">→</span></button>
+                    </div>
+                  </div>
+              </div>
+                </div>
+                  
+               
+              </div>
+          </section>
+
+
+          <section class="service_section service_section_small_devices">
+            <div class="service_section_texts">
+               <div class="service_title">
+                  <p class="service_title_yellow">事業内容</p>
+                  <h2 class="service_title_black">Service</h2>
+                  <div class="service_inner_paragraph_flex">
+                    <p class="service_inner_paragraph service_inner_paragraph_small_devices">
+                      「人的リソースが足りない。しかし採用活動が上手く進まない...。」<br>
+                       株式会社CTF GROUPは、そんな中小零細企業に特化した新しい総合マーケティング支援を行っています。<br>
+                       新規顧客の開拓、販路拡大、代理店の開拓などの様々なニーズに対し、
+                       インバウンド・アウトバウ <br>
+                       ンド施策両方を網羅し <br>
+                       ている弊社だからこそ、最適なご提案が可能です。
+                    </p>
+                  </div>
+               </div>
+            </div>   
+              <div class="service_cards_section_small_devices">
+                <div class="service_cards service_cards_small_devices">
+                  <div class="service_card service_card_small_devices">
+                    <img src="./assets/serviceSmallDevice.jpg" alt="service_picture" class="service_card_images_smalldevice">
+                      <div class="smallDevice_blackCard"><p class="smallDevice_blackCard_text">Service <span class="servcie_number_circle">2</span></p></div>
+                      
+                    <div class="serviceGreen_cardSmalDevice">
+                      <div class="smallDevice_blackCardSecond"><p class="smallDevice_blackCard_text">マーケティング支援</p></div>
+                      <h2 class="service_green_card_texts smallDeviceTexts">
+                        <span class="service_green_card_japanese_word smallDeviceJapaneseWord">ゼロセールス</span><br>
+                        ZERO SALES
+                      </h2>
+                         <p class="service_green_card_long_word_text small_device_long_word">
+                          テキストが入りますテキストが入ります <br>
+                          テキストが入りますテキストが入ります <br>
+                          テキストが入りますテキストが入ります <br>
+                          テキストが入りますテキストが入ります
+                         </p>
+                      <button class="view_more_Service_GreenCard view_more_Service_GreenCard_small_device">View More <span class="view_more_arrow">→</span></button>
+                    </div>
+                  </div>
+              </div>
+              <div class="service_cards service_cards_small_devices">
+                <div class="service_card service_card_small_devices">
+                  <img src="./assets/serviceSmallDevice.jpg" alt="service_picture" class="service_card_images_smalldevice">
+                    <div class="smallDevice_blackCard"><p class="smallDevice_blackCard_text">Service <span class="servcie_number_circle">2</span></p></div>
+                    
+                  <div class="serviceGreen_cardSmalDevice">
+                    <div class="smallDevice_blackCardSecond"><p class="smallDevice_blackCard_text">マーケティング支援</p></div>
+                    <h2 class="service_green_card_texts smallDeviceTexts">
+                      <span class="service_green_card_japanese_word smallDeviceJapaneseWord">ゼロセールス</span><br>
+                      ZERO SALES
+                    </h2>
+                       <p class="service_green_card_long_word_text small_device_long_word">
+                        テキストが入りますテキストが入ります <br>
+                        テキストが入りますテキストが入ります <br>
+                        テキストが入りますテキストが入ります <br>
+                        テキストが入りますテキストが入ります
+                       </p>
+                    <button class="view_more_Service_GreenCard view_more_Service_GreenCard_small_device">View More <span class="view_more_arrow">→</span></button>
+                  </div>
+                </div>
+            </div>
+              </div>
+              <div class="service_cards_section_small_devices">
+                <div class="service_cards service_cards_small_devices">
+                  <div class="service_card service_card_small_devices">
+                    <img src="./assets/serviceSmallDevice.jpg" alt="service_picture" class="service_card_images_smalldevice">
+                      <div class="smallDevice_blackCard"><p class="smallDevice_blackCard_text">Service <span class="servcie_number_circle">2</span></p></div>
+                      
+                    <div class="serviceGreen_cardSmalDevice">
+                      <div class="smallDevice_blackCardSecond"><p class="smallDevice_blackCard_text">マーケティング支援</p></div>
+                      <h2 class="service_green_card_texts smallDeviceTexts">
+                        <span class="service_green_card_japanese_word smallDeviceJapaneseWord">ゼロセールス</span><br>
+                        ZERO SALES
+                      </h2>
+                         <p class="service_green_card_long_word_text small_device_long_word">
+                          テキストが入りますテキストが入ります <br>
+                          テキストが入りますテキストが入ります <br>
+                          テキストが入りますテキストが入ります <br>
+                          テキストが入りますテキストが入ります
+                         </p>
+                      <button class="view_more_Service_GreenCard view_more_Service_GreenCard_small_device">View More <span class="view_more_arrow">→</span></button>
+                    </div>
+                  </div>
+              </div>
+              <div class="service_cards service_cards_small_devices">
+                <div class="service_card service_card_small_devices">
+                  <img src="./assets/serviceSmallDevice.jpg" alt="service_picture" class="service_card_images_smalldevice">
+                    <div class="smallDevice_blackCard"><p class="smallDevice_blackCard_text">Service <span class="servcie_number_circle">2</span></p></div>
+                    
+                  <div class="serviceGreen_cardSmalDevice">
+                    <div class="smallDevice_blackCardSecond"><p class="smallDevice_blackCard_text">マーケティング支援</p></div>
+                    <h2 class="service_green_card_texts smallDeviceTexts">
+                      <span class="service_green_card_japanese_word smallDeviceJapaneseWord">ゼロセールス</span><br>
+                      ZERO SALES
+                    </h2>
+                       <p class="service_green_card_long_word_text small_device_long_word">
+                        テキストが入りますテキストが入ります <br>
+                        テキストが入りますテキストが入ります <br>
+                        テキストが入りますテキストが入ります <br>
+                        テキストが入りますテキストが入ります
+                       </p>
+                    <button class="view_more_Service_GreenCard view_more_Service_GreenCard_small_device">View More <span class="view_more_arrow">→</span></button>
+                  </div>
+                </div>
+            </div>
+              </div>
+         
+            </div>
+           
+        </section>
+        <!-- Service section -->
+
+
+        <!-- Case study -->
+         <section class="case_study">
+           <div class="study">
+            <div class="case_study_title">
+              <h2 class="case_study_title_text">
+                <span class="case_study_title_text_yellow">導入事例</span> <br>
+                Case Study
+              </h2>
+           </div>
+
+           <div class="image_cards">
+               <div class="image_card">
+                 <img src="./assets/study.jpg" alt="Case_study_image">
+                 <div class="case_study_image_card_texts">
+                      <h2 class="case_study_image_card_name">株式会社　株式会社</h2>
+                      <p class="case_study_image_card_paragraph">タイトルタイトルタイトルタイト <br>
+                        ルタイトルタイトルタイトル</p>
+                 </div>
+                 <div class="case_study_text_btns">
+                  <p class="case_study_text_btn">Zero sales</p>
+                  <p class="case_study_text_btn case_study_text_btn_second">コンサルティング</p>
+                  <p class="case_study_text_btn">従業員50人</p><br>
+                 </div>
+                 <p class="case_study_text_btn case_study_text_btn_second">計画設計コンサルティング</p>
+               </div>
+               <div class="image_card">
+                <img src="./assets/study.jpg" alt="Case_study_image">
+                <div class="case_study_image_card_texts">
+                     <h2 class="case_study_image_card_name">株式会社　株式会社</h2>
+                     <p class="case_study_image_card_paragraph">タイトルタイトルタイトルタイト <br>
+                       ルタイトルタイトルタイトル</p>
+                </div>
+                <div class="case_study_text_btns">
+                 <p class="case_study_text_btn">Zero sales</p>
+                 <p class="case_study_text_btn case_study_text_btn_second">コンサルティング</p>
+                 <p class="case_study_text_btn">従業員50人</p><br>
+                </div>
+                <p class="case_study_text_btn case_study_text_btn_second">計画設計コンサルティング</p>
+              </div>
+              <div class="image_card">
+                <img src="./assets/study.jpg" alt="Case_study_image">
+                <div class="case_study_image_card_texts">
+                     <h2 class="case_study_image_card_name">株式会社　株式会社</h2>
+                     <p class="case_study_image_card_paragraph">タイトルタイトルタイトルタイト <br>
+                       ルタイトルタイトルタイトル</p>
+                </div>
+                <div class="case_study_text_btns">
+                 <p class="case_study_text_btn">Zero sales</p>
+                 <p class="case_study_text_btn case_study_text_btn_second">コンサルティング</p>
+                 <p class="case_study_text_btn">従業員50人</p><br>
+                </div>
+                <p class="case_study_text_btn case_study_text_btn_second">計画設計コンサルティング</p>
+              </div>
+           </div>
+           <div class="case_Study_button">
+            <button class="view_more_btn view_more_btn_case_study">View More <span class="view_more_arrow">→</span></button>
+           </div>
+              
+           </div>
+         </section>
+        <!-- Case study -->
+
+
+        <!-- Members Section -->
+          <section class="members">
+             <div class="members_section_title">
+                <h2 class="memebrs_section_main_text">
+                   <span class="memebrs_section_japanese_text">メンバー</span> <br>
+                   Member
+                </h2>
+             </div>
+             <div class="man_image_slider_items">
+                <div class="slider_item">
+                    <img src="./assets/member_guy.jpg" alt="">
+                    <div class="slider_item_texts">
+                        <h2 class="slider_item_name">
+                          <span class="slider_item_paragraph">役職が入ります</span> <br>
+                          田中　太郎
+                        </h2>
+                    </div>
+                </div>
+                <div class="slider_item">
+                  <img src="./assets/member_guy.jpg" alt="">
+                  <div class="slider_item_texts">
+                      <h2 class="slider_item_name">
+                        <span class="slider_item_paragraph">役職が入ります</span> <br>
+                        田中　太郎
+                      </h2>
+                  </div>
+              </div>
+              <div class="slider_item">
+                <img src="./assets/member_guy.jpg" alt="">
+                <div class="slider_item_texts">
+                    <h2 class="slider_item_name">
+                      <span class="slider_item_paragraph">役職が入ります</span> <br>
+                      田中　太郎
+                    </h2>
+                </div>
+            </div>
+            <div class="slider_item">
+              <img src="./assets/member_guy.jpg" alt="">
+              <div class="slider_item_texts">
+                  <h2 class="slider_item_name">
+                    <span class="slider_item_paragraph">役職が入ります</span> <br>
+                    田中　太郎
+                  </h2>
+              </div>
+          </div>
+          <div class="slider_item">
+            <img src="./assets/member_guy.jpg" alt="">
+            <div class="slider_item_texts">
+                <h2 class="slider_item_name">
+                  <span class="slider_item_paragraph">役職が入ります</span> <br>
+                  田中　太郎
+                </h2>
+            </div>
+        </div>
+        <div class="slider_item">
+          <img src="./assets/member_guy.jpg" alt="">
+          <div class="slider_item_texts">
+              <h2 class="slider_item_name">
+                <span class="slider_item_paragraph">役職が入ります</span> <br>
+                田中　太郎
+              </h2>
+          </div>
+      </div>
+      <div class="slider_item">
+        <img src="./assets/member_guy.jpg" alt="">
+        <div class="slider_item_texts">
+            <h2 class="slider_item_name">
+              <span class="slider_item_paragraph">役職が入ります</span> <br>
+              田中　太郎
+            </h2>
+        </div>
+    </div>
+    <div class="slider_item">
+                <img src="./assets/member_guy.jpg" alt="">
+                <div class="slider_item_texts">
+                    <h2 class="slider_item_name">
+                      <span class="slider_item_paragraph">役職が入ります</span> <br>
+                      田中　太郎
+                    </h2>
+                </div>
+            </div>
+            </div>
+            <div class="memebers_btn_cover">
+              <button class="view_more_btn_members">View More <span class="view_more_arrow">→</span></button>
+            </div>
+          </section>
+        <!-- Members Section -->
+
+
+        <!-- News Section -->
+           <section class="news">
+            <div class="news_item_texts">
+              <h2 class="news_item_name">
+                <span class="news_item_paragraph">お知らせ</span> <br>
+                NEWS
+              </h2>
+          </div>
+
+          <div class="news_text_items">
+             <div class="news_text_item">
+              <div class="news_text_item_inner">
+                <h2>0000/00 <br>/00</h2>
+                <p class="case_study_text_btn case_study_text_btn_second news_paragraph_btn">プレスリリース</p>
+              </div>
+              <p class="news_item_paragraph">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+             </div>
+              <hr >
+              <div class="news_text_item">
+                <div class="news_text_item_inner">
+                  <h2>0000/00 <br>/00</h2>
+                  <p class="case_study_text_btn case_study_text_btn_second news_paragraph_btn">プレスリリース</p>
+                </div>
+                <p class="news_item_paragraph">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+               </div>
+                <hr >
+                <div class="news_text_item">
+                  <div class="news_text_item_inner">
+                    <h2>0000/00 <br>/00</h2>
+                    <p class="case_study_text_btn case_study_text_btn_second news_paragraph_btn">プレスリリース</p>
+                  </div>
+                  <p class="news_item_paragraph">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                 </div>
+                  <hr >
+                  <div class="news_text_item">
+                    <div class="news_text_item_inner">
+                      <h2>0000/00 <br>/00</h2>
+                      <p class="case_study_text_btn case_study_text_btn_second news_paragraph_btn">プレスリリース</p>
+                    </div>
+                    <p class="news_item_paragraph">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                   </div>
+                    <hr >
+             </div>
+              <div class="newsButton_cover">
+                <button class="view_more_btn_news">View More <span class="view_more_arrow">→</span></button>
+              </div>
+          
+           </section>
+        <!-- News Section -->
+
+        <!-- Contact and Recruiter section -->
+           <section class="contact_and_recruiter">
+               <div class=" recruiter">
+                   <img src="./assets/recruit.jpg" alt="RecruitImage" class="contact_and_recruiter_image">
+                   <h2 class="recruiter_main_text">
+                      <span class="recruiter_second_text">採用情報</span> <br>
+                      Recruit
+                   </h2>
+               </div>
+               <div class="contact">
+                <img src="./assets/contact.jpg" alt="contactInage" class="contact_and_recruiter_image">
+                <h2 class="recruiter_main_text">
+                   <span class="recruiter_second_text">お問い合わせ</span> <br>
+                   Contact
+                </h2>
+            </div>
+           </section>
+        <!-- Contact and Recruiter section -->
+
+
+        <!-- Footer Section -->
+          <section class="footerSection">
+             <div class="footer_cover">
+                <div class="footer_logo">
+                   <img src="./assets/LogoULab.svg" alt="U-Lab Logo" class="footer_logo_image">
+                </div>
+                <div class="footer_links">
+                   <div class="firstrow">
+                      <a href="#" class="links_footer">サービス</a>
+                      <a href="#" class="links_footer">メニュー</a>
+                      <a href="#" class="links_footer">メニュー</a>
+                      <a href="#" class="links_footer">メニュー</a>
+                      <a href="#" class="links_footer">メニュー</a>
+                   </div>
+                   <div class="firstrow">
+                    <a href="#" class="links_footer">会社情報</a>
+                    <a href="#" class="links_footer">会社概要</a>
+                    <a href="#" class="links_footer">行動指針・経営方針</a>
+                    <a href="#" class="links_footer">代表挨拶</a>
+                    <a href="#" class="links_footer">メンバー</a>
+                 </div>
+                 <div class="firstrow">
+                  <a href="#" class="links_footer">事例</a>
+                  <a href="#" class="links_footer">お知らせ</a>
+                  <a href="#" class="links_footer">採用情報</a>
+                  <a href="#" class="links_footer">お問い合わせ</a>
+               </div>
+               <div class="firstrow">
+                <a href="#" class="links_footer">プライバシーポリシー</a>
+               </div>
+                </div>
+             </div>
+          </div>
+        <!-- Footer Section -->
+
+        <!-- Small Devices Footer Section -->
+        <div class="footer_accardion_menu">
+          <div class="footer_accardion_menu_items" onclick="FooterAccardionMenu('firstOne')">
+            <a href="#" class="footer_Small_device_link">会社情報</a>
+            <div class="footer_accardion_close none"></div>
+            <div class="footer_accadrion_open">+</div>
+          </div>
+          <div class="footer_accardion_menu_items footer_accardion_menu_itemsSecond">
+            <a href="#" class="footer_Small_device_link">会社概要</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items footer_accardion_menu_itemsSecond">
+            <a href="#" class="footer_Small_device_link">行動指針・経営方針</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items footer_accardion_menu_itemsSecond">
+            <a href="#" class="footer_Small_device_link">代表挨拶</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items footer_accardion_menu_itemsSecond">
+            <a href="#" class="footer_Small_device_link">メンバー</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items" onclick="FooterAccardionMenu('secondOne')">
+            <a href="#" class="footer_Small_device_link">会社情報</a>
+            <div class="footer_accardion_close_second none"></div>
+            <span class="footer_accadrion_open_second">+</span>
+          </div>
+          <div class="footer_accardion_menu_items footer_accardion_menu_itemsSecond">
+            <a href="#" class="footer_Small_device_link">ZERO SALES</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items footer_accardion_menu_itemsSecond">
+            <a href="#" class="footer_Small_device_link">ZERO MARKETING</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items footer_accardion_menu_itemsSecond">
+            <a href="#" class="footer_Small_device_link">ZERO PROMOTION</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items footer_accardion_menu_itemsSecond">
+            <a href="#" class="footer_Small_device_link">ZERO UNIT</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items">
+            <a href="#" class="footer_Small_device_link">導入事例</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items">
+            <a href="#" class="footer_Small_device_link">お知らせ</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items">
+            <a href="#" class="footer_Small_device_link">採用情報</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items">
+            <a href="#" class="footer_Small_device_link">お問い合わせ</a>
+            <span class="footer_link_arrow">></span>
+          </div>
+          <div class="footer_accardion_menu_items">
+            <a href="#" class="footer_Small_device_link">プライバシーポリシー</a>
+          </div>
+          
+        </div>
+        <div class="uLabLogo_cover">
+          <img src="./assets/LogoULab.svg" alt="U_Lab_logo" class="ulab_logo">
+        </div>
+        </section>
+        <!-- Small Devices Footer Section -->
+        <!-- The Footer Last Section -->
+            <section  class="the_last_section">
+               <div>
+                   <p class="the_last_sectionText">© copyright 2024 CTF group</p>
+               </div>
+            </section>
+        <!-- The Footer Last Section -->
+
+     <!-- Javascript file -->
+    <script src="./js/app.js"></script>
+     <!-- Javascript file -->
+</html>

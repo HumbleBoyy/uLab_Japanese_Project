@@ -1,0 +1,97 @@
+.case_study{
+    width: 100%;
+    height: auto;
+    background: url("../../assets/vectorCase_study.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 6.4rem 2rem;
+    justify-content: center;
+}
+
+.case_study_title{
+    margin-top: 2rem;
+}
+
+.case_study_title_text{
+    text-align: center;
+    font-family: "Shippori Mincho" "serif";
+    font-weight: 700;
+    font-size:  4.8rem;
+    line-height: 8.6rem;
+    letter-spacing: 5%;
+    color: var(--black);
+}
+
+.case_study_title_text_yellow{
+    font-family: "Shippori Mincho" "serif";
+    font-weight: 700;
+    font-size:  1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: 5%;
+    color: var(--subYellow);
+}
+
+.case_study_image_card_name{
+    font-family: "Shippori Mincho" "serif";
+    font-weight: 700;
+    font-size:  2.4rem;
+    line-height: 4.3rem;
+    letter-spacing: 5%;
+    color: var(--black);
+}
+
+.case_study_image_card_paragraph{
+    font-family: "Shippori Mincho" "serif";
+    font-weight: 700;
+    font-size:  1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: 5%;
+    color: var(--black);
+}
+
+.case_study_text_btn{
+    width: 8.2rem;
+    background: var(--primary);
+    height: 3rem;
+    font-family: "Shippori Mincho" "serif";
+    font-weight: 700;
+    font-size:  1.2rem;
+    text-align: center;
+    padding: 0.4rem;
+    line-height: 2.1rem;
+    letter-spacing: 5%;
+    color: var(--white);
+    margin: 0.1rem;
+}
+.case_study_text_btns{
+    display: flex;
+}
+.case_study_text_btn_second{
+    width: 15.7rem;
+}
+
+.image_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.2rem;
+}
+
+.case_Study_button
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width:990px) {
+    .image_cards{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4.2rem;
+    }
+}
